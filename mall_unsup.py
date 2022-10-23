@@ -1,9 +1,13 @@
-import matplotlib.pyplot as plt
+import streamlit as st
 import numpy as np
+import pandas as pd
+import seaborn as sns
+from sklearn.svm import SVC
+from sklearn.model_selection import train_test_split
+import matplotlib.pyplot as plt
 
 file = "/content/mall_customer.csv"
 
-import pandas as pd
 df = pd.read_csv(file)
 df.head()
 
